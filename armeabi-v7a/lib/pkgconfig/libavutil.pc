@@ -1,0 +1,14 @@
+prefix=/home/lighthouse/av_build/ffmpeg/FFmpeg_n4.3.3/android_so/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/home/lighthouse/av_build/ffmpeg/FFmpeg_n4.3.3/android_so/armeabi-v7a/lib
+includedir=/home/lighthouse/av_build/ffmpeg/FFmpeg_n4.3.3/android_so/armeabi-v7a/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.51.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}
